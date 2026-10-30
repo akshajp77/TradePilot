@@ -1,0 +1,2548 @@
+{
+ "version": 3,
+ "lessons": [
+  {
+   "id": "stock",
+   "path": "Basics",
+   "title": "What a share represents",
+   "seconds": 55,
+   "hook": "A ticker moves. What do you actually own?",
+   "explanation": "A stock is a share of ownership in a company. A price change changes the market value of that share, not necessarily the company's underlying business overnight.",
+   "example": "Start with the company's business before you decide whether its price interests you.",
+   "question": "What is the strongest first research question?",
+   "options": [
+    "What does the company sell?",
+    "Did the ticker rise today?",
+    "What is trending online?"
+   ],
+   "correct": 0,
+   "feedback": "Understand the business before interpreting the price.",
+   "symbol": "AAPL"
+  },
+  {
+   "id": "order",
+   "path": "Orders & Risk",
+   "title": "Market or limit order?",
+   "seconds": 65,
+   "hook": "A quote appears. Is that your guaranteed fill?",
+   "explanation": "A market order seeks execution at the next available price. A limit buy sets the most you will pay, but may remain unfilled.",
+   "example": "A limit buy expresses your maximum price, though it may stay open.",
+   "question": "You refuse to pay more than $105. Which order fits?",
+   "options": [
+    "Market buy",
+    "Limit buy at $105",
+    "Market sell"
+   ],
+   "correct": 1,
+   "feedback": "A limit buy caps your purchase price. It does not guarantee a fill.",
+   "symbol": "AAPL"
+  },
+  {
+   "id": "size",
+   "path": "Orders & Risk",
+   "title": "Size before direction",
+   "seconds": 70,
+   "hook": "Even a good idea can be a bad-sized trade.",
+   "explanation": "Position size is the share of your account exposed to one security. Concentration makes one surprise matter more.",
+   "example": "A $1,000 position is 10% of a $10,000 account; a $5,000 position is 50%.",
+   "question": "Which position is less concentrated in a $10,000 account?",
+   "options": [
+    "$1,000",
+    "$5,000",
+    "They are equal"
+   ],
+   "correct": 0,
+   "feedback": "The $1,000 position exposes a smaller portion of the account.",
+   "symbol": "TSLA"
+  },
+  {
+   "id": "etf",
+   "path": "Research",
+   "title": "One company or a basket?",
+   "seconds": 55,
+   "hook": "A single stock and a broad fund carry different risks.",
+   "explanation": "An ETF may hold many securities. Diversification can reduce company-specific risk, though the whole market can still fall.",
+   "example": "Compare an individual company with SPY, a broad US equity ETF.",
+   "question": "Which statement is accurate?",
+   "options": [
+    "An ETF cannot lose value",
+    "A broad ETF can still fall",
+    "One stock is always safer"
+   ],
+   "correct": 1,
+   "feedback": "Diversification does not eliminate market risk.",
+   "symbol": "SPY"
+  },
+  {
+   "id": "news",
+   "path": "Market Events",
+   "title": "A headline is not a plan",
+   "seconds": 60,
+   "hook": "A headline arrives after a sharp move. What do you know?",
+   "explanation": "Separate reported facts, possible interpretations, and unknowns. Note publication time before comparing news with a price chart.",
+   "example": "Write what evidence would change your view before acting.",
+   "question": "What should you check before attributing a move to a story?",
+   "options": [
+    "The source and time",
+    "The number of likes",
+    "The color of the chart"
+   ],
+   "correct": 0,
+   "feedback": "Source, timing, and uncertainty help prevent a false explanation.",
+   "symbol": "MSFT"
+  },
+  {
+   "id": "plan",
+   "path": "Trading Plans",
+   "title": "Know what changes your mind",
+   "seconds": 75,
+   "hook": "When would your trade idea be wrong?",
+   "explanation": "A usable thesis names evidence, a time horizon, and an invalidation condition. Decide these before seeing an outcome.",
+   "example": "A plan may say: if the core business assumption fails, review or exit.",
+   "question": "Which is an invalidation condition?",
+   "options": [
+    "I feel nervous",
+    "The evidence supporting my thesis reverses",
+    "I want a green chart"
+   ],
+   "correct": 1,
+   "feedback": "Tie the exit to the original reason for the trade.",
+   "symbol": "AAPL"
+  }
+ ],
+ "bites": [
+  {
+   "id": "bite-compound",
+   "title": "Simple vs. compound interest",
+   "subtitle": "Two paths from the same $1,000 · 48 sec",
+   "kind": "compound",
+   "captions": [
+    "Same deposit. Same rate. In this six-percent example, both accounts earn sixty dollars in year one. So far, they’re identical.",
+    "Now jump ten years ahead. Simple interest adds sixty dollars each year. Compound interest earns on earlier interest, too. Watch the blue line pull away.",
+    "Try a different rate. Both paths start with the same money. The gap is the extra interest earned by leaving your interest invested.",
+    "At six percent, compounding adds about a hundred and ninety-one dollars beyond simple interest in ten years. This example holds the rate constant; investments don’t."
+   ],
+   "question": "Why does the blue line pull away?",
+   "options": [
+    "It starts with more money",
+    "Interest also earns interest",
+    "The interest rate increases every year"
+   ],
+   "correct": 1,
+   "explanation": "The rate stays constant. Compounding applies it to the growing balance; simple interest applies it only to the original $1,000."
+  },
+  {
+   "id": "bite-size",
+   "title": "Same drop, different damage",
+   "subtitle": "10% vs. 50% of an account · 48 sec",
+   "kind": "size",
+   "captions": [
+    "Imagine a thousand-dollar account. Put a hundred dollars into one stock. That’s ten percent of the account; the rest stays in cash.",
+    "The stock drops twenty percent. You lose twenty dollars, not two hundred. The red square is the loss: just two percent of the whole account.",
+    "What if half the account were in that stock? The same drop now costs ten percent of the account. Move the slider and compare.",
+    "Position size changes the impact of a bad outcome. Multiply the fraction you invest by the stock’s drop. Smaller exposure limits this loss, not every risk."
+   ],
+   "question": "A 10% position falls 20%. Other assets stay constant. What is the account loss?",
+   "options": [
+    "2%",
+    "20%",
+    "10%"
+   ],
+   "correct": 0,
+   "explanation": "10% × 20% = 2% of the account. A 50% position experiencing the same drop loses 10% of the account."
+  },
+  {
+   "id": "bite-limit",
+   "title": "A price ceiling, not a promise",
+   "subtitle": "Watch a buy limit become eligible · 48 sec",
+   "kind": "limit",
+   "captions": [
+    "You want to buy, but only at a hundred dollars or less. The orange line is your ceiling. The blue dots are available prices.",
+    "At a hundred and three dollars, the order waits. Your limit controls the price you’ll accept. It doesn’t make the market come to you.",
+    "Now prices fall through the ceiling. At ninety-eight dollars, the condition is met. Try moving your limit. Notice when the status changes.",
+    "Eligible doesn’t mean filled: real execution also needs available shares. A market order accepts available prices. A limit order can wait, or never fill."
+   ],
+   "question": "What does a buy limit guarantee?",
+   "options": [
+    "A fill today",
+    "A maximum purchase price if filled",
+    "A profit"
+   ],
+   "correct": 1,
+   "explanation": "A buy limit caps the execution price. It does not guarantee that the order executes."
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Stock",
+   "explanation": "A small piece of ownership in a company. If the company does well over time, each piece can become worth more.",
+   "example": "Owning 1 share of Apple means you own a tiny slice of Apple.",
+   "aliases": [
+    "Share",
+    "Shares"
+   ]
+  },
+  {
+   "term": "Ticker",
+   "explanation": "The short code used to look up a stock, usually 1–5 letters.",
+   "example": "AAPL is Apple's ticker; SPY is a fund that tracks the S&P 500.",
+   "aliases": [
+    "Symbol"
+   ]
+  },
+  {
+   "term": "Stock exchange",
+   "explanation": "A marketplace where buyers and sellers trade stocks, like the New York Stock Exchange or Nasdaq.",
+   "example": "When you buy a stock, your order is matched with a seller through an exchange or similar venue.",
+   "aliases": [
+    "Exchange",
+    "NYSE",
+    "Nasdaq"
+   ]
+  },
+  {
+   "term": "Market hours",
+   "explanation": "US stocks trade normally from 9:30 AM to 4:00 PM Eastern time on weekdays, except holidays. Some brokers also allow trading before (from 4:00 AM) and after (until 8:00 PM) with fewer people trading.",
+   "example": "An order placed at midnight waits until the market opens.",
+   "aliases": [
+    "Regular session",
+    "Trading hours"
+   ]
+  },
+  {
+   "term": "Pre-market",
+   "explanation": "Trading before the regular 9:30 AM open, from as early as 4:00 AM Eastern. Fewer people trade, so prices can jump around more.",
+   "example": "A stock with big overnight news may already be up 10% at 8:00 AM.",
+   "aliases": [
+    "Premarket",
+    "Extended hours"
+   ]
+  },
+  {
+   "term": "After hours",
+   "explanation": "Trading after the 4:00 PM close, until 8:00 PM Eastern. Like the pre-market, there are fewer buyers and sellers.",
+   "example": "Many companies report earnings right after 4:00 PM, so prices often move after hours.",
+   "aliases": [
+    "After-hours",
+    "Post-market"
+   ]
+  },
+  {
+   "term": "Bid",
+   "explanation": "The highest price someone is currently willing to pay for a stock. If you sell right now, you'll usually get about the bid.",
+   "example": "Bid $99.98 means a buyer is waiting to pay $99.98.",
+   "aliases": [
+    "Bid price"
+   ],
+   "graphic": "spread"
+  },
+  {
+   "term": "Ask",
+   "explanation": "The lowest price someone is currently willing to sell at. If you buy right now, you'll usually pay about the ask.",
+   "example": "Ask $100.02 means a seller is waiting to sell at $100.02.",
+   "aliases": [
+    "Ask price",
+    "Offer"
+   ],
+   "graphic": "spread"
+  },
+  {
+   "term": "Spread",
+   "explanation": "The gap between the bid and the ask. It's a hidden cost: buy at the ask and sell immediately at the bid, and you lose the spread.",
+   "example": "Bid $99.98, ask $100.02: the spread is 4 cents.",
+   "aliases": [
+    "Bid-ask spread"
+   ],
+   "graphic": "spread"
+  },
+  {
+   "term": "Market order",
+   "explanation": "An order to buy or sell right away at the best price available. It fills fast, but you don't control the exact price.",
+   "example": "Buying 10 shares with a market order fills near the ask within a second.",
+   "aliases": [
+    "Market"
+   ]
+  },
+  {
+   "term": "Limit order",
+   "explanation": "An order that only fills at your price or better. You control the price, but it might never fill.",
+   "example": "A buy limit at $95 waits until someone sells at $95 or less.",
+   "aliases": [
+    "Limit",
+    "Limit price"
+   ]
+  },
+  {
+   "term": "Stop loss",
+   "explanation": "An order that sells (or buys back, if you're short) automatically when the price reaches a level you chose, to stop a loss from getting bigger.",
+   "example": "You buy at $100 and set a stop loss at $95. If the price drops to $95, you're out.",
+   "aliases": [
+    "Stop-loss",
+    "Stop",
+    "Stop order",
+    "Stop price"
+   ],
+   "graphic": "stopLoss"
+  },
+  {
+   "term": "Profit target",
+   "explanation": "A price where you plan to take your profit. Often placed as a limit order so it happens automatically.",
+   "example": "Buy at $100, stop at $95, target at $110.",
+   "aliases": [
+    "Take profit",
+    "Target"
+   ],
+   "graphic": "riskReward"
+  },
+  {
+   "term": "Bracket order",
+   "explanation": "An entry order with a stop loss and a profit target attached. When one exit fills, the other is canceled automatically.",
+   "example": "Buy at $100 with a stop at $95 and a target at $110, all in one order.",
+   "aliases": [
+    "Bracket",
+    "OCO",
+    "One-cancels-other"
+   ],
+   "graphic": "bracket"
+  },
+  {
+   "term": "Stop-limit order",
+   "explanation": "Like a stop order, but when the stop price is reached it becomes a limit order instead of a market order. You control the price, but it may not fill in a fast drop.",
+   "example": "Stop $95, limit $94.50: it only sells at $94.50 or better once $95 trades.",
+   "aliases": [
+    "Stop limit"
+   ]
+  },
+  {
+   "term": "Trailing stop",
+   "explanation": "A stop loss that follows the price up (for a buy) by a set amount or percent, but never moves down. It locks in gains as the price rises.",
+   "example": "A 5% trailing stop on a stock that rises from $100 to $120 sits at $114.",
+   "aliases": [
+    "Trail",
+    "Trailing stop order"
+   ]
+  },
+  {
+   "term": "Time in force",
+   "explanation": "How long an order stays open. 'Day' orders cancel at the close; 'Good 'til canceled' (GTC) orders stay until they fill or you cancel them.",
+   "example": "A day limit order that doesn't fill by 4:00 PM is canceled.",
+   "aliases": [
+    "TIF",
+    "Day order",
+    "GTC",
+    "Good til canceled"
+   ]
+  },
+  {
+   "term": "Fill",
+   "explanation": "When your order actually trades. The fill price is what you really paid or received.",
+   "example": "Your market order filled at $100.03.",
+   "aliases": [
+    "Filled",
+    "Execution"
+   ]
+  },
+  {
+   "term": "Slippage",
+   "explanation": "The difference between the price you expected and the price you actually got. Common with market orders in fast moves.",
+   "example": "You clicked buy at $100.00 but filled at $100.06: 6 cents of slippage."
+  },
+  {
+   "term": "Position",
+   "explanation": "The shares you currently own (or owe, if you're short) in one stock.",
+   "example": "Your position in AAPL is 10 shares.",
+   "aliases": [
+    "Positions",
+    "Holding"
+   ]
+  },
+  {
+   "term": "Long",
+   "explanation": "Owning shares because you expect the price to rise.",
+   "example": "You're long 10 shares of AAPL.",
+   "aliases": [
+    "Going long"
+   ]
+  },
+  {
+   "term": "Short selling",
+   "explanation": "Borrowing shares, selling them, and hoping to buy them back cheaper later. You profit if the price falls, but losses can be unlimited if it rises.",
+   "example": "Short at $100, buy back at $90: you make $10 a share. If it goes to $150 instead, you lose $50 a share.",
+   "aliases": [
+    "Short",
+    "Shorting",
+    "Sell short",
+    "Short sale"
+   ],
+   "graphic": "short"
+  },
+  {
+   "term": "Short squeeze",
+   "explanation": "When a heavily shorted stock rises, short sellers rush to buy shares back to limit their losses, which pushes the price up even faster.",
+   "example": "GameStop in January 2021 is the most famous example.",
+   "aliases": [
+    "Squeeze"
+   ]
+  },
+  {
+   "term": "Cover",
+   "explanation": "Buying back shares to close a short position.",
+   "example": "You shorted 10 shares; buying 10 back 'covers' the short.",
+   "aliases": [
+    "Buy to cover"
+   ]
+  },
+  {
+   "term": "Flatten",
+   "explanation": "Closing a position completely so you own nothing in that stock.",
+   "example": "Flattening AAPL sells all your AAPL shares.",
+   "aliases": [
+    "Close position",
+    "Flat"
+   ]
+  },
+  {
+   "term": "Realized return",
+   "explanation": "Profit or loss that's locked in because you sold (or covered).",
+   "example": "Buy at $100, sell at $110: $10 a share realized.",
+   "aliases": [
+    "Realized",
+    "Realized P&L"
+   ]
+  },
+  {
+   "term": "Unrealized return",
+   "explanation": "Profit or loss on paper for a position you still hold. It changes with the price until you close it.",
+   "example": "You own shares bought at $100 and the price is $108: $8 a share unrealized.",
+   "aliases": [
+    "Unrealized",
+    "Unrealized P&L",
+    "Open P&L"
+   ]
+  },
+  {
+   "term": "P&L",
+   "explanation": "Short for profit and loss: how much you've made or lost.",
+   "example": "Today's P&L: +$45.",
+   "aliases": [
+    "Profit and loss",
+    "PnL"
+   ]
+  },
+  {
+   "term": "Cash",
+   "explanation": "Money in your account that isn't invested.",
+   "example": "You have $5,000 cash and $5,000 in stocks."
+  },
+  {
+   "term": "Equity",
+   "explanation": "The total value of your account: cash plus what your positions are worth (minus anything you owe).",
+   "example": "Cash $5,000 + stocks $5,200 = equity $10,200.",
+   "aliases": [
+    "Account value",
+    "Net liquidation"
+   ]
+  },
+  {
+   "term": "Buying power",
+   "explanation": "How much you can spend on new trades right now. In a cash account it's your settled cash; with margin it can be more.",
+   "example": "Equity $10,000 on margin can mean $20,000 of buying power.",
+   "aliases": [
+    "BP",
+    "Money you can trade with"
+   ]
+  },
+  {
+   "term": "Settlement",
+   "explanation": "The official transfer of shares and cash after a trade. US stock trades settle one business day later (T+1).",
+   "example": "Sell on Monday, and the cash is settled on Tuesday.",
+   "aliases": [
+    "T+1",
+    "Settled cash",
+    "Unsettled"
+   ]
+  },
+  {
+   "term": "Cash account",
+   "explanation": "A brokerage account where you can only trade with your own settled money. No borrowing and no short selling.",
+   "example": "Most beginners start with a cash account."
+  },
+  {
+   "term": "Margin",
+   "explanation": "Money borrowed from your broker to buy more stock than your cash allows. It increases both gains and losses, and you pay interest on it.",
+   "example": "With $10,000 and 2× margin you could buy $20,000 of stock; a 10% drop then costs you $2,000, not $1,000.",
+   "aliases": [
+    "Margin account",
+    "Borrowing"
+   ],
+   "graphic": "margin"
+  },
+  {
+   "term": "Margin call",
+   "explanation": "A demand from your broker to add money or sell positions because your account fell below the required minimum. If you don't, they can sell for you.",
+   "example": "A big drop on borrowed money can trigger a margin call.",
+   "aliases": [
+    "Maintenance call"
+   ],
+   "graphic": "margin"
+  },
+  {
+   "term": "Maintenance margin",
+   "explanation": "The minimum share of your positions' value you must cover with your own money. FINRA sets 25%; many brokers require 30% or more.",
+   "example": "With $20,000 of stock and 30% maintenance, your own equity must stay above $6,000.",
+   "aliases": [
+    "Maintenance requirement",
+    "Maintenance"
+   ]
+  },
+  {
+   "term": "Pattern day trader rule",
+   "explanation": "An older US rule that limited people with less than $25,000 to 3 day trades in 5 business days on margin. A new FINRA rule replaced it in June 2026, but some brokers may keep the old limit until October 2027.",
+   "example": "Under the old rule, a 4th day trade in a week with $10,000 could get your account restricted.",
+   "aliases": [
+    "PDT",
+    "Pattern day trader",
+    "PDT rule"
+   ]
+  },
+  {
+   "term": "Day trade",
+   "explanation": "Buying and selling the same stock on the same day.",
+   "example": "Buy AAPL at 10:00 AM and sell it at 2:00 PM: one day trade.",
+   "aliases": [
+    "Day trading",
+    "Intraday"
+   ]
+  },
+  {
+   "term": "Swing trade",
+   "explanation": "A trade held for a few days to a few weeks, trying to catch one move.",
+   "example": "Buying on Monday and selling the next Friday.",
+   "aliases": [
+    "Swing trading"
+   ]
+  },
+  {
+   "term": "Investing",
+   "explanation": "Buying and holding for years, usually in diversified funds, to grow wealth slowly.",
+   "example": "Adding $100 a month to an S&P 500 fund for 20 years.",
+   "aliases": [
+    "Long-term investing"
+   ],
+   "graphic": "compound"
+  },
+  {
+   "term": "Index fund",
+   "explanation": "A fund that owns all the stocks in an index, like the S&P 500, so you get the whole market's return with one purchase.",
+   "example": "SPY and VOO track the S&P 500.",
+   "aliases": [
+    "Index",
+    "S&P 500"
+   ],
+   "graphic": "diversification"
+  },
+  {
+   "term": "ETF",
+   "explanation": "Exchange-traded fund: a basket of stocks (or other assets) that trades like a single stock.",
+   "example": "QQQ holds about 100 of the largest Nasdaq companies.",
+   "aliases": [
+    "Exchange-traded fund",
+    "Fund"
+   ],
+   "graphic": "diversification"
+  },
+  {
+   "term": "Diversification",
+   "explanation": "Spreading money across many investments so one bad one can't sink you.",
+   "example": "Owning 500 companies through an index fund instead of 1 company.",
+   "aliases": [
+    "Diversify"
+   ],
+   "graphic": "diversification"
+  },
+  {
+   "term": "Volatility",
+   "explanation": "How much and how fast a price moves up and down. High volatility means bigger swings both ways.",
+   "example": "A stock that moves 5% a day is more volatile than one that moves 0.5%.",
+   "aliases": [
+    "Volatile"
+   ]
+  },
+  {
+   "term": "Beta",
+   "explanation": "How much a stock tends to move compared with the whole market. Above 1 means it usually swings more than the market.",
+   "example": "A beta of 1.5 suggests a 10% market drop could mean about 15% for this stock."
+  },
+  {
+   "term": "Drawdown",
+   "explanation": "How far your account (or a price) has fallen from its highest point.",
+   "example": "Your account peaked at $12,000 and is now $10,800: a 10% drawdown.",
+   "aliases": [
+    "Max drawdown",
+    "Maximum drawdown"
+   ],
+   "graphic": "recovery"
+  },
+  {
+   "term": "Risk",
+   "explanation": "How much you could lose on a trade. For a trade with a stop loss, risk is the distance to the stop times your shares.",
+   "example": "Buy 50 shares at $100, stop at $98: risk is $100.",
+   "aliases": [
+    "Risk per trade"
+   ],
+   "graphic": "riskReward"
+  },
+  {
+   "term": "Position sizing",
+   "explanation": "Choosing how many shares to buy so that, if your stop is hit, you lose only a small, planned amount.",
+   "example": "Risking 1% of a $10,000 account ($100) with a $2 stop means 50 shares.",
+   "aliases": [
+    "Size",
+    "Sizing",
+    "Position size"
+   ],
+   "graphic": "riskReward"
+  },
+  {
+   "term": "R-multiple",
+   "explanation": "A trade's result measured in units of what you risked. +2R means you made twice what you were willing to lose.",
+   "example": "Risked $100, made $250: +2.5R.",
+   "aliases": [
+    "R",
+    "Risk multiple"
+   ],
+   "graphic": "riskReward"
+  },
+  {
+   "term": "Reward-to-risk",
+   "explanation": "How much you could make compared with how much you could lose.",
+   "example": "Stop $5 below, target $10 above: 2 to 1.",
+   "aliases": [
+    "Reward:risk",
+    "Risk-reward",
+    "R:R"
+   ],
+   "graphic": "riskReward"
+  },
+  {
+   "term": "Win rate",
+   "explanation": "The share of your trades that made money.",
+   "example": "6 winners out of 10 trades is a 60% win rate.",
+   "aliases": [
+    "Win %"
+   ]
+  },
+  {
+   "term": "Expectancy",
+   "explanation": "How much you make or lose per trade on average. Positive expectancy is what matters, not winning often.",
+   "example": "Winning 40% of the time at +2R and losing 60% at −1R averages +0.2R a trade.",
+   "aliases": [
+    "Edge",
+    "Average per trade"
+   ]
+  },
+  {
+   "term": "Profit factor",
+   "explanation": "Total money won divided by total money lost. Above 1 means winners outweigh losers.",
+   "example": "Won $1,500, lost $1,000: profit factor 1.5."
+  },
+  {
+   "term": "Revenge trading",
+   "explanation": "Jumping back into a trade right after a loss to 'win it back'. It usually leads to bigger losses.",
+   "example": "Losing $100, then immediately taking a bigger trade without a plan.",
+   "aliases": [
+    "Revenge trade"
+   ]
+  },
+  {
+   "term": "FOMO",
+   "explanation": "Fear of missing out: buying because a price is shooting up and everyone's talking about it, not because of a plan.",
+   "example": "Buying a stock after it's already up 80% today.",
+   "aliases": [
+    "Fear of missing out"
+   ]
+  },
+  {
+   "term": "Candlestick",
+   "explanation": "A chart bar showing four prices for a time period: open, high, low and close. The thick body runs from open to close; the thin lines (wicks) show the high and low.",
+   "example": "A green 5-minute candle means the price closed higher than it opened in those 5 minutes.",
+   "aliases": [
+    "Candle",
+    "Candles",
+    "Candlestick chart",
+    "OHLC"
+   ],
+   "graphic": "candle"
+  },
+  {
+   "term": "Timeframe",
+   "explanation": "How much time each bar on the chart covers.",
+   "example": "On a 5-minute chart, each candle is 5 minutes of trading.",
+   "aliases": [
+    "Chart timeframe"
+   ]
+  },
+  {
+   "term": "Trend",
+   "explanation": "The general direction a price is moving: up, down, or sideways.",
+   "example": "An uptrend makes higher highs and higher lows.",
+   "aliases": [
+    "Uptrend",
+    "Downtrend"
+   ],
+   "graphic": "trend"
+  },
+  {
+   "term": "Support",
+   "explanation": "A price level where buyers have stepped in before, stopping the price from falling further.",
+   "example": "A stock that bounced off $50 three times has support near $50.",
+   "aliases": [
+    "Support level"
+   ],
+   "graphic": "supportResistance"
+  },
+  {
+   "term": "Resistance",
+   "explanation": "A price level where sellers have shown up before, stopping the price from rising further.",
+   "example": "A stock that turned down at $60 twice has resistance near $60.",
+   "aliases": [
+    "Resistance level"
+   ],
+   "graphic": "supportResistance"
+  },
+  {
+   "term": "Breakout",
+   "explanation": "When the price moves above resistance (or below support) and keeps going.",
+   "example": "After stalling at $60 for weeks, the stock jumps to $63 on heavy volume.",
+   "aliases": [
+    "Break out"
+   ],
+   "graphic": "supportResistance"
+  },
+  {
+   "term": "Pullback",
+   "explanation": "A short dip in an uptrend before the price continues higher.",
+   "example": "A stock rises from $50 to $60, dips to $57, then rises again.",
+   "aliases": [
+    "Pull back",
+    "Dip"
+   ],
+   "graphic": "trend"
+  },
+  {
+   "term": "Volume",
+   "explanation": "How many shares traded in a period. High volume means lots of interest; it makes a move more meaningful.",
+   "example": "10 million shares traded today versus 2 million normally.",
+   "aliases": [
+    "Trading volume"
+   ],
+   "graphic": "volume"
+  },
+  {
+   "term": "Relative volume",
+   "explanation": "Today's volume compared with normal. 2 means twice the usual amount.",
+   "example": "RVOL 3 means three times the normal volume: something is happening.",
+   "aliases": [
+    "RVOL",
+    "Volume vs normal"
+   ],
+   "graphic": "volume"
+  },
+  {
+   "term": "Moving average",
+   "explanation": "The average price over the last several bars, drawn as a smooth line. It shows the trend without the noise.",
+   "example": "A 20-bar moving average on a 5-minute chart averages the last 100 minutes.",
+   "aliases": [
+    "SMA",
+    "EMA",
+    "Simple moving average",
+    "Exponential moving average",
+    "MA"
+   ],
+   "graphic": "movingAverage"
+  },
+  {
+   "term": "VWAP",
+   "explanation": "Volume-weighted average price: the average price paid today, giving more weight to prices where more shares traded. Many traders treat it as today's 'fair' price.",
+   "example": "If a stock is above VWAP, today's buyers are on average in profit.",
+   "aliases": [
+    "Volume-weighted average price"
+   ],
+   "graphic": "vwap"
+  },
+  {
+   "term": "RSI",
+   "explanation": "Relative Strength Index: a 0–100 gauge of how strong recent moves up have been compared with moves down. Above 70 is often called 'overbought', below 30 'oversold', but strong trends can stay there a long time.",
+   "example": "RSI 82 after a big run means buyers have been very strong lately.",
+   "aliases": [
+    "Relative strength index"
+   ],
+   "graphic": "rsi"
+  },
+  {
+   "term": "MACD",
+   "explanation": "A momentum indicator built from two moving averages. When the faster one crosses above the slower one, momentum is turning up.",
+   "example": "A MACD line crossing above its signal line is a common 'momentum turning up' signal."
+  },
+  {
+   "term": "Bollinger Bands",
+   "explanation": "Lines drawn above and below a moving average that widen when the price is jumpy and narrow when it's calm.",
+   "example": "Narrow bands often come before a bigger move.",
+   "aliases": [
+    "Bollinger"
+   ]
+  },
+  {
+   "term": "ATR",
+   "explanation": "Average true range: the typical size of one bar's move. Useful for setting stops that aren't too tight.",
+   "example": "ATR $0.80 on a 5-minute chart means bars usually cover about 80 cents.",
+   "aliases": [
+    "Average true range"
+   ]
+  },
+  {
+   "term": "Stochastic",
+   "explanation": "An indicator showing where the price closed within its recent high-low range, from 0 to 100.",
+   "example": "A reading of 90 means it closed near the top of its recent range.",
+   "aliases": [
+    "Stochastic oscillator"
+   ]
+  },
+  {
+   "term": "Indicator",
+   "explanation": "A calculation drawn on a chart (like a moving average or RSI) to help read price action. Indicators describe the past; they don't predict.",
+   "example": "Adding a 20 EMA to your chart.",
+   "aliases": [
+    "Indicators",
+    "Technical indicator"
+   ]
+  },
+  {
+   "term": "Gap",
+   "explanation": "When a stock opens well above or below where it closed the day before, leaving an empty space on the chart.",
+   "example": "News overnight makes a stock close at $50 and open at $55: a gap up.",
+   "aliases": [
+    "Gap up",
+    "Gap down"
+   ]
+  },
+  {
+   "term": "Scanner",
+   "explanation": "A tool that searches the whole market for stocks matching conditions, like 'up more than 5% on high volume'.",
+   "example": "Using a scanner to find today's biggest movers.",
+   "aliases": [
+    "Screener",
+    "Stock scanner"
+   ]
+  },
+  {
+   "term": "Earnings",
+   "explanation": "A company's quarterly report of how much it sold and earned. Prices can jump or drop sharply right after.",
+   "example": "Apple reports earnings after the close; the stock moves 5% after hours.",
+   "aliases": [
+    "Earnings report",
+    "Earnings date"
+   ]
+  },
+  {
+   "term": "P/E ratio",
+   "explanation": "Price divided by a year of earnings per share. A rough gauge of how much investors pay for each dollar of profit.",
+   "example": "A $100 stock earning $5 a share has a P/E of 20.",
+   "aliases": [
+    "PE",
+    "Price to earnings"
+   ]
+  },
+  {
+   "term": "EPS (TTM)",
+   "explanation": "Earnings per share over the last twelve months: the company's profit divided by its number of shares.",
+   "example": "$10 billion profit across 2 billion shares is $5 EPS.",
+   "aliases": [
+    "EPS",
+    "Earnings per share"
+   ]
+  },
+  {
+   "term": "Market cap",
+   "explanation": "The total value of all a company's shares: share price times the number of shares.",
+   "example": "1 billion shares at $50 is a $50 billion market cap.",
+   "aliases": [
+    "Market capitalization"
+   ]
+  },
+  {
+   "term": "Revenue",
+   "explanation": "All the money a company brings in from selling its products or services, before costs.",
+   "example": "A company that sells 1 million phones at $500 has $500 million in revenue.",
+   "aliases": [
+    "Sales"
+   ]
+  },
+  {
+   "term": "Net income",
+   "explanation": "What's left of revenue after all costs and taxes: the company's profit.",
+   "example": "Revenue $500 million, costs $450 million: net income $50 million.",
+   "aliases": [
+    "Profit"
+   ]
+  },
+  {
+   "term": "Dividend",
+   "explanation": "Cash some companies pay shareholders regularly, usually every quarter.",
+   "example": "A $1 yearly dividend on a $50 stock is a 2% yield.",
+   "aliases": [
+    "Dividends",
+    "Dividend yield"
+   ]
+  },
+  {
+   "term": "Fractional share",
+   "explanation": "Less than one full share. Lets you invest a dollar amount instead of a whole number of shares.",
+   "example": "$50 of a $200 stock buys 0.25 shares.",
+   "aliases": [
+    "Fractional",
+    "Partial share"
+   ]
+  },
+  {
+   "term": "Inflation",
+   "explanation": "Prices of everyday things rising over time, so each dollar buys less.",
+   "example": "3% inflation means $100 of groceries costs $103 a year later.",
+   "aliases": [
+    "CPI",
+    "Consumer Price Index"
+   ]
+  },
+  {
+   "term": "Interest rates",
+   "explanation": "The cost of borrowing money. When the Federal Reserve raises rates, borrowing gets more expensive and stocks often fall.",
+   "example": "The Fed raising rates by 0.25% can move the whole market in minutes.",
+   "aliases": [
+    "Fed",
+    "Federal Reserve",
+    "FOMC",
+    "Rate hike"
+   ]
+  },
+  {
+   "term": "Circuit breaker",
+   "explanation": "An automatic pause in trading when the whole market falls very fast (7%, 13% or 20% in the S&P 500 in one day).",
+   "example": "On March 9, 2020, trading stopped for 15 minutes right after the open.",
+   "aliases": [
+    "Trading halt",
+    "Halt"
+   ]
+  },
+  {
+   "term": "Pump and dump",
+   "explanation": "A scam where people hype a cheap stock to get others to buy, then sell their own shares at the inflated price, leaving the new buyers with losses.",
+   "example": "A stranger in a chat group says a $0.50 stock 'will 10× by Friday'.",
+   "aliases": [
+    "Pump-and-dump"
+   ],
+   "graphic": "pumpDump"
+  },
+  {
+   "term": "Penny stock",
+   "explanation": "A very low-priced stock, often under $5, usually of a small company with few buyers and sellers. Popular in scams because the price is easy to push around.",
+   "example": "A $0.30 stock that trades a few thousand shares a day.",
+   "aliases": [
+    "Penny stocks",
+    "Microcap"
+   ]
+  },
+  {
+   "term": "Liquidity",
+   "explanation": "How easily you can buy or sell without moving the price. Lots of volume and a tight spread mean good liquidity.",
+   "example": "SPY trades tens of millions of shares a day: very liquid.",
+   "aliases": [
+    "Liquid",
+    "Illiquid"
+   ],
+   "graphic": "volume"
+  },
+  {
+   "term": "Paper trading",
+   "explanation": "Practicing with pretend money in a simulator, like this app. Same decisions, no real risk.",
+   "example": "Trading Lab's practice account is paper trading.",
+   "aliases": [
+    "Practice account",
+    "Simulator",
+    "Paper"
+   ]
+  },
+  {
+   "term": "Compounding",
+   "explanation": "Earning returns on your past returns, so growth speeds up over time.",
+   "example": "$1,000 growing 10% a year becomes about $2,594 in 10 years, not $2,000.",
+   "aliases": [
+    "Compound interest",
+    "Compound growth"
+   ],
+   "graphic": "compound"
+  },
+  {
+   "term": "Dollar-cost averaging",
+   "explanation": "Investing a fixed amount on a regular schedule no matter the price, so you buy more shares when prices are low.",
+   "example": "Investing $100 on the 1st of every month.",
+   "aliases": [
+    "DCA"
+   ],
+   "graphic": "compound"
+  },
+  {
+   "term": "Recovery math",
+   "explanation": "After a loss, you need a bigger gain to get back to even. Lose 50% and you need +100%.",
+   "example": "Down 20% needs +25%; down 50% needs +100%.",
+   "aliases": [
+    "Loss recovery"
+   ],
+   "graphic": "recovery"
+  },
+  {
+   "term": "Options",
+   "explanation": "Contracts that give the right to buy or sell a stock at a set price by a set date. They use leverage, so they can lose 100% of what you paid quickly.",
+   "example": "A $200 option bet can go to $0 in a few days.",
+   "aliases": [
+    "Option",
+    "Calls",
+    "Puts"
+   ]
+  },
+  {
+   "term": "Leverage",
+   "explanation": "Controlling more money than you put in, using borrowed money or products like options. Small moves become big gains or big losses.",
+   "example": "2× leverage turns a 10% drop into a 20% loss.",
+   "aliases": [
+    "Leveraged"
+   ],
+   "graphic": "margin"
+  },
+  {
+   "term": "Brokerage",
+   "explanation": "The company that holds your account and sends your orders to the market, like Alpaca, Fidelity or Robinhood.",
+   "example": "You need a brokerage account to buy real stocks.",
+   "aliases": [
+    "Broker",
+    "Brokerage account"
+   ]
+  },
+  {
+   "term": "Custodial account",
+   "explanation": "A brokerage account an adult opens and controls for someone under 18.",
+   "example": "A parent can open a custodial account for their teenager.",
+   "aliases": [
+    "UTMA",
+    "UGMA"
+   ]
+  }
+ ],
+ "replay": {
+  "name": "Volt Energy",
+  "symbol": "VOLT",
+  "note": "Illustrative scenario · fictional prices",
+  "prices": [
+   45,
+   49,
+   43,
+   51,
+   47,
+   42,
+   52,
+   48,
+   55,
+   50,
+   46,
+   53
+  ],
+  "revealAt": 5
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": "Stock market basics",
+   "summary": "What you're buying, why prices move, and your first practice trades.",
+   "lessons": [
+    {
+     "id": "u1-what-is-a-stock",
+     "title": "What is a stock?",
+     "minutes": 3,
+     "pages": [
+      "A stock is a small piece of ownership in a company. Companies sell these pieces to raise money, and after that people trade them with each other every day.",
+      "If the company grows and makes more money over time, people are usually willing to pay more for each piece. If it struggles, the price usually falls.",
+      "You don't need to buy a whole share. Many brokers let you buy a fraction, like $20 of a $200 stock. In this app you practice with pretend money, so nothing you do here can lose real dollars."
+     ],
+     "terms": [
+      "Stock",
+      "Ticker",
+      "Fractional share",
+      "Paper trading"
+     ],
+     "quiz": [
+      {
+       "question": "What do you own when you buy a share of a company?",
+       "options": [
+        "A loan to the company",
+        "A small piece of the company",
+        "A promise of a fixed payment"
+       ],
+       "correct": 1,
+       "explanation": "A share is ownership. Its value goes up and down with what people think the company is worth."
+      },
+      {
+       "question": "Can a stock's price fall below what you paid?",
+       "options": [
+        "No, stocks only go up long-term",
+        "Yes, at any time",
+        "Only if the company goes bankrupt"
+       ],
+       "correct": 1,
+       "explanation": "Prices move every second. Even great companies have years where the stock falls a lot."
+      }
+     ],
+     "graphic": "candle"
+    },
+    {
+     "id": "u1-why-prices-move",
+     "title": "Why prices move",
+     "minutes": 4,
+     "pages": [
+      "A stock's price is simply the last price a buyer and a seller agreed on. If more people want to buy than sell, the price rises until enough sellers appear. If more want to sell, it falls.",
+      "News changes what people want. Earnings reports (a company's quarterly results), new products, lawsuits, interest-rate decisions and even rumors can move prices in seconds.",
+      "Prices often move before the news is obvious to everyone, and sometimes they move for no clear reason at all. That's why nobody can predict prices reliably, and why this app focuses on managing risk instead of guessing."
+     ],
+     "terms": [
+      "Earnings",
+      "Interest rates",
+      "Volatility"
+     ],
+     "quiz": [
+      {
+       "question": "The price of a stock rises when…",
+       "options": [
+        "The company announces it",
+        "More people want to buy than sell at the current price",
+        "The market opens"
+       ],
+       "correct": 1,
+       "explanation": "Supply and demand: buyers competing for shares push the price up."
+      },
+      {
+       "question": "A company reports earnings tomorrow. What's likely?",
+       "options": [
+        "Nothing changes",
+        "The price may jump or drop a lot",
+        "Trading stops for the day"
+       ],
+       "correct": 1,
+       "explanation": "Earnings surprises often cause big, fast moves, sometimes past a stop loss."
+      }
+     ],
+     "graphic": "trend"
+    },
+    {
+     "id": "u1-bid-ask",
+     "title": "Buying price vs selling price",
+     "minutes": 4,
+     "pages": [
+      "Every stock has two prices at any moment: the bid (the most someone will pay right now) and the ask (the least someone will sell for right now).",
+      "If you buy right away you usually pay the ask. If you sell right away you usually get the bid. The gap between them is called the spread, and it's a small cost you pay on every quick trade.",
+      "Popular stocks like Apple have a spread of about a penny. Small, rarely traded stocks can have spreads of several percent, which means you start every trade with a loss."
+     ],
+     "terms": [
+      "Bid",
+      "Ask",
+      "Spread",
+      "Liquidity"
+     ],
+     "quiz": [
+      {
+       "question": "You want to buy immediately. Which price will you usually pay?",
+       "options": [
+        "The bid",
+        "The ask",
+        "The last price"
+       ],
+       "correct": 1,
+       "explanation": "Buyers who want to trade now meet the sellers' asking price."
+      },
+      {
+       "question": "Bid is $9.80 and ask is $10.20. Why is this risky?",
+       "options": [
+        "It isn't",
+        "The 40-cent spread is about 4%, a cost you pay right away",
+        "The stock is about to fall"
+       ],
+       "correct": 1,
+       "explanation": "Buying at $10.20 and selling right away at $9.80 loses about 4% before the price moves at all."
+      }
+     ],
+     "graphic": "spread"
+    },
+    {
+     "id": "u1-first-buy",
+     "title": "Your first practice buy",
+     "minutes": 3,
+     "pages": [
+      "A market order says 'buy now at whatever the current price is'. It fills almost instantly, close to the ask.",
+      "Market orders are simple, but you don't control the exact price. In a fast-moving stock, you might pay a bit more than you expected. That difference is called slippage.",
+      "Try it now with pretend money: open the Chart tab, pick a stock you know, and buy a small amount with a market order."
+     ],
+     "terms": [
+      "Market order",
+      "Fill",
+      "Slippage"
+     ],
+     "quiz": [
+      {
+       "question": "What does a market order guarantee?",
+       "options": [
+        "The exact price you see",
+        "That it fills quickly, not the exact price",
+        "That you make money"
+       ],
+       "correct": 1,
+       "explanation": "Speed, not price. If price matters more, use a limit order (next lesson)."
+      }
+     ],
+     "task": {
+      "kind": "marketOrder",
+      "instruction": "Buy any stock with a market order in your practice account."
+     }
+    },
+    {
+     "id": "u1-limit-orders",
+     "title": "Limit orders: pick your price",
+     "minutes": 4,
+     "pages": [
+      "A limit order only fills at your price or better. A buy limit at $95 will only buy at $95 or lower.",
+      "That gives you control, but there's a trade-off: if the price never reaches your limit, the order never fills, and you might miss the move.",
+      "Limit orders are great when the spread is wide or when you only want a stock at a certain price. Try placing one below the current price and watch whether it fills."
+     ],
+     "terms": [
+      "Limit order",
+      "Time in force"
+     ],
+     "quiz": [
+      {
+       "question": "You place a buy limit at $50 and the stock is at $52. What happens?",
+       "options": [
+        "It buys at $52",
+        "It waits; it only buys at $50 or less",
+        "It's rejected"
+       ],
+       "correct": 1,
+       "explanation": "The order waits until a seller is willing to sell at $50 or better."
+      },
+      {
+       "question": "What's the main downside of a limit order?",
+       "options": [
+        "It costs more",
+        "It might never fill",
+        "It can't be canceled"
+       ],
+       "correct": 1,
+       "explanation": "Control over price means no guarantee of a fill."
+      }
+     ],
+     "task": {
+      "kind": "limitOrder",
+      "instruction": "Place a buy limit order below the current price."
+     }
+    },
+    {
+     "id": "u1-selling",
+     "title": "Selling: locking in a gain or loss",
+     "minutes": 4,
+     "pages": [
+      "While you hold a stock, your gain or loss is 'unrealized': it's just on paper and changes with every price move.",
+      "When you sell, it becomes 'realized'. That's real money gained or lost (here, real practice money).",
+      "Deciding when to sell is harder than deciding when to buy. Good traders decide before they buy: 'I'll sell if it falls to X, or if it rises to Y.' You'll learn how in the next unit. For now, close a practice trade and look at the result."
+     ],
+     "terms": [
+      "Unrealized return",
+      "Realized return",
+      "P&L"
+     ],
+     "quiz": [
+      {
+       "question": "You bought at $100 and the price is now $110. You haven't sold. Your $10 gain is…",
+       "options": [
+        "Realized",
+        "Unrealized",
+        "Guaranteed"
+       ],
+       "correct": 1,
+       "explanation": "It's unrealized until you sell. It can still disappear."
+      }
+     ],
+     "task": {
+      "kind": "closeTrade",
+      "instruction": "Close a position (sell what you bought) so a full trade shows in your journal."
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": "Protecting your money",
+   "summary": "Losses, stop losses, how much to buy, and handling emotions. The most important unit in the app.",
+   "lessons": [
+    {
+     "id": "u2-loss-math",
+     "title": "Why losses hurt more than gains",
+     "minutes": 3,
+     "pages": [
+      "If your account drops 10%, you need an 11% gain to get back to even. Drop 25% and you need 33%. Drop 50% and you need 100%: you have to double what's left.",
+      "That's why experienced traders care more about avoiding big losses than about finding big winners. Small losses are easy to recover from. Big ones can take years.",
+      "Rule of thumb: never let one trade, or one bad day, do serious damage to your account."
+     ],
+     "terms": [
+      "Recovery math",
+      "Drawdown"
+     ],
+     "quiz": [
+      {
+       "question": "Your account falls from $10,000 to $5,000. What gain do you need to get back to $10,000?",
+       "options": [
+        "50%",
+        "100%",
+        "25%"
+       ],
+       "correct": 1,
+       "explanation": "$5,000 has to double to reach $10,000."
+      },
+      {
+       "question": "Which matters more for staying in the game?",
+       "options": [
+        "Finding the biggest winners",
+        "Keeping losses small",
+        "Trading as often as possible"
+       ],
+       "correct": 1,
+       "explanation": "Small losses keep your account alive long enough to learn."
+      }
+     ],
+     "graphic": "recovery"
+    },
+    {
+     "id": "u2-stop-loss",
+     "title": "Stop losses: your emergency exit",
+     "minutes": 5,
+     "pages": [
+      "A stop loss is an order that gets you out automatically if the price falls to a level you picked. It turns 'I hope it comes back' into a decision you made calmly ahead of time.",
+      "Put the stop where your idea is clearly wrong, usually just below a recent low for a buy. Too close and normal wiggles knock you out; too far and the loss gets big.",
+      "A stop isn't perfect: if a stock drops suddenly (for example after bad news overnight), it can open below your stop and you'll get out at a worse price. Still, it's far better than no plan.",
+      "Try it: buy a stock and attach a stop loss, or add one to a position you already own."
+     ],
+     "terms": [
+      "Stop loss",
+      "Bracket order"
+     ],
+     "quiz": [
+      {
+       "question": "Where does a stop loss usually go for a buy?",
+       "options": [
+        "Above the current price",
+        "Below a recent low, where your idea is clearly wrong",
+        "Exactly at the price you paid"
+       ],
+       "correct": 1,
+       "explanation": "Below the price, at the point where you'd admit the trade isn't working."
+      },
+      {
+       "question": "A stock closes at $50 with your stop at $47, then opens at $40 after bad news. You'll likely sell near…",
+       "options": [
+        "$47",
+        "$40",
+        "$50"
+       ],
+       "correct": 1,
+       "explanation": "Stops become market orders once triggered; a gap can blow right past them."
+      }
+     ],
+     "task": {
+      "kind": "stopLoss",
+      "instruction": "Place a trade with a stop loss (use the bracket switch in the order ticket)."
+     },
+     "graphic": "stopLoss"
+    },
+    {
+     "id": "u2-position-size",
+     "title": "How much to buy",
+     "minutes": 5,
+     "pages": [
+      "Most beginners pick how many shares to buy by gut feeling. Pros work backward from the stop loss: 'If I'm wrong, how much am I willing to lose?'",
+      "A common rule is to risk at most 1% of your account per trade. With $10,000, that's $100. If your stop is $2 below your entry, you buy 50 shares ($100 ÷ $2).",
+      "This way, even 10 losses in a row only costs about 10% of your account. The order ticket can do this math for you: choose 'Size by: Risk' and set a stop loss."
+     ],
+     "terms": [
+      "Position sizing",
+      "Risk",
+      "Stop loss"
+     ],
+     "quiz": [
+      {
+       "question": "$20,000 account, 1% risk, stop $4 below entry. How many shares?",
+       "options": [
+        "500",
+        "50",
+        "5"
+       ],
+       "correct": 1,
+       "explanation": "1% of $20,000 is $200. $200 ÷ $4 = 50 shares."
+      },
+      {
+       "question": "Why size by risk instead of by how confident you feel?",
+       "options": [
+        "It makes more money every time",
+        "It keeps every loss small and planned",
+        "Brokers require it"
+       ],
+       "correct": 1,
+       "explanation": "Confidence doesn't change how much a wrong trade costs. Sizing by risk does."
+      }
+     ],
+     "task": {
+      "kind": "sizeByRisk",
+      "instruction": "Place an order where the loss at your stop is 2% of your account or less."
+     },
+     "graphic": "riskReward"
+    },
+    {
+     "id": "u2-reward-risk",
+     "title": "Profit targets and reward-to-risk",
+     "minutes": 5,
+     "pages": [
+      "Before a trade, compare what you could make with what you could lose. If your stop is $1 away and your target is $2 away, that's 2-to-1 reward-to-risk.",
+      "With 2-to-1 trades, you can be wrong more often than right and still make money. Win 4 out of 10 and you'd earn 8 and lose 6, a net gain.",
+      "A bracket order places your stop loss and profit target together. When one fills, the other cancels automatically. Try placing one with a target at least as far as your stop."
+     ],
+     "terms": [
+      "Profit target",
+      "Reward-to-risk",
+      "R-multiple",
+      "Expectancy"
+     ],
+     "quiz": [
+      {
+       "question": "Stop $1 below, target $3 above. What's the reward-to-risk?",
+       "options": [
+        "1 to 3",
+        "3 to 1",
+        "1 to 1"
+       ],
+       "correct": 1,
+       "explanation": "You could make $3 for every $1 you risk."
+      },
+      {
+       "question": "With 2-to-1 trades, what win rate breaks even (before costs)?",
+       "options": [
+        "About 33%",
+        "50%",
+        "66%"
+       ],
+       "correct": 0,
+       "explanation": "Winning 1 of 3: +2, −1, −1 = 0."
+      }
+     ],
+     "task": {
+      "kind": "bracket",
+      "instruction": "Place a bracket order with a target at least as far away as your stop."
+     },
+     "graphic": "bracket"
+    },
+    {
+     "id": "u2-emotions",
+     "title": "Fear, greed and revenge trading",
+     "minutes": 4,
+     "pages": [
+      "Losing money feels about twice as bad as winning the same amount feels good. That makes us hold losers too long ('it'll come back') and sell winners too early.",
+      "After a loss, many people jump straight into another trade to win it back. This is called revenge trading, and it's one of the fastest ways to turn a small loss into a big one. FOMO (fear of missing out) is the opposite trap: chasing something because it's already shooting up.",
+      "Simple fixes: decide your stop and target before you enter, take a break after 3 losses in a row, and set a daily loss limit. The app will nudge you when it notices these patterns."
+     ],
+     "terms": [
+      "Revenge trading",
+      "FOMO"
+     ],
+     "quiz": [
+      {
+       "question": "You just lost $200. What's the best next step?",
+       "options": [
+        "Take a bigger trade to win it back",
+        "Pause, review what happened, then decide",
+        "Remove your stop losses"
+       ],
+       "correct": 1,
+       "explanation": "A break interrupts the urge to 'get even'."
+      },
+      {
+       "question": "A stock is up 60% today and everyone's talking about it. Buying now because you don't want to miss out is…",
+       "options": [
+        "A plan",
+        "FOMO",
+        "Diversification"
+       ],
+       "correct": 1,
+       "explanation": "Chasing a move without a plan is FOMO, and late buyers often get hurt."
+      }
+     ]
+    },
+    {
+     "id": "u2-plan-review",
+     "title": "Make a plan, then review it",
+     "minutes": 4,
+     "pages": [
+      "Before every trade, write one sentence: why you're taking it, where you'll get out if wrong, and where you'll take profit.",
+      "After the trade, look back: did you follow your plan? A losing trade that followed a good plan is fine. A winning trade that broke your rules is a warning.",
+      "Your journal grades each trade on how you traded, not on whether it made money. Open a closed trade in the Journal and write what you learned."
+     ],
+     "terms": [
+      "P&L"
+     ],
+     "quiz": [
+      {
+       "question": "Which trade deserves more praise?",
+       "options": [
+        "A planned trade with a stop that lost a little",
+        "An unplanned trade with no stop that got lucky",
+        "They're the same"
+       ],
+       "correct": 0,
+       "explanation": "Good process wins over time; lucky wins build bad habits."
+      }
+     ],
+     "task": {
+      "kind": "reflection",
+      "instruction": "Write a reflection on a trade (open it from your Journal)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": "Reading charts",
+   "summary": "Candles, trends, support and resistance, volume and indicators, in plain words.",
+   "lessons": [
+    {
+     "id": "u3-candles",
+     "title": "Candlesticks",
+     "minutes": 4,
+     "pages": [
+      "Each candle shows four prices for its time period: where it opened, the highest and lowest prices, and where it closed.",
+      "The thick part (the body) runs from open to close. Green means it closed higher than it opened; red means lower. The thin lines (wicks) show how far the price stretched.",
+      "A long lower wick means sellers pushed the price down but buyers pushed it back up. You don't need to memorize pattern names; just read who won the period."
+     ],
+     "terms": [
+      "Candlestick",
+      "Timeframe"
+     ],
+     "quiz": [
+      {
+       "question": "A red candle means…",
+       "options": [
+        "The stock is bad",
+        "It closed lower than it opened in that period",
+        "Trading was halted"
+       ],
+       "correct": 1,
+       "explanation": "Red = close below open for that candle's time period."
+      },
+      {
+       "question": "A long wick below a candle shows that…",
+       "options": [
+        "The price never went that low",
+        "The price dropped but buyers pushed it back up",
+        "Volume was zero"
+       ],
+       "correct": 1,
+       "explanation": "The wick marks a low that didn't hold by the close."
+      }
+     ],
+     "task": {
+      "kind": "chartOpen",
+      "instruction": "Open the Chart tab and switch between two timeframes."
+     },
+     "graphic": "candle"
+    },
+    {
+     "id": "u3-trends",
+     "title": "Trends: up, down, sideways",
+     "minutes": 4,
+     "pages": [
+      "An uptrend makes higher highs and higher lows, like climbing stairs. A downtrend makes lower highs and lower lows. Sideways means the price bounces in a range.",
+      "Trading in the direction of the trend is usually easier than fighting it. Buying in a strong downtrend because it 'looks cheap' is a classic beginner mistake.",
+      "Practice spotting trends in the chart drills: they show real past charts and check your answer."
+     ],
+     "terms": [
+      "Trend",
+      "Pullback"
+     ],
+     "quiz": [
+      {
+       "question": "Higher highs and higher lows is…",
+       "options": [
+        "A downtrend",
+        "An uptrend",
+        "Sideways"
+       ],
+       "correct": 1,
+       "explanation": "Each swing goes a bit higher than the last."
+      },
+      {
+       "question": "Why is buying in a strong downtrend risky?",
+       "options": [
+        "It's illegal",
+        "Prices that are falling often keep falling",
+        "Volume is always low"
+       ],
+       "correct": 1,
+       "explanation": "'Cheap' can get cheaper; a trend has momentum."
+      }
+     ],
+     "task": {
+      "kind": "drill",
+      "instruction": "Finish one chart drill (Learn → Chart drills)."
+     },
+     "graphic": "trend"
+    },
+    {
+     "id": "u3-support-resistance",
+     "title": "Support and resistance",
+     "minutes": 4,
+     "pages": [
+      "Support is a price where buyers have stepped in before. Resistance is where sellers have shown up before. Think of them as floors and ceilings.",
+      "These levels work because many people remember them. When the price finally breaks through a ceiling with lots of volume, that's called a breakout, and the old ceiling often becomes a new floor.",
+      "Draw a horizontal line on the chart at a level where the price turned more than once."
+     ],
+     "terms": [
+      "Support",
+      "Resistance",
+      "Breakout"
+     ],
+     "quiz": [
+      {
+       "question": "A stock bounced up from $50 three times. $50 is likely…",
+       "options": [
+        "Resistance",
+        "Support",
+        "The spread"
+       ],
+       "correct": 1,
+       "explanation": "Buyers keep defending $50: a floor."
+      },
+      {
+       "question": "After a breakout above resistance, that old resistance level often becomes…",
+       "options": [
+        "Support",
+        "Irrelevant",
+        "The new ask"
+       ],
+       "correct": 0,
+       "explanation": "Old ceilings often turn into new floors."
+      }
+     ],
+     "task": {
+      "kind": "drawing",
+      "instruction": "Draw a horizontal line on a chart (Chart tab → pencil)."
+     },
+     "graphic": "supportResistance"
+    },
+    {
+     "id": "u3-volume",
+     "title": "Volume: is anyone interested?",
+     "minutes": 3,
+     "pages": [
+      "Volume is how many shares traded. The bars along the bottom of the chart show it.",
+      "A move on high volume means lots of people took part, so it's more believable. A move on very low volume can reverse easily.",
+      "Stocks that trade few shares each day are risky for beginners: wide spreads and sudden jumps. The scanner's default filters skip them."
+     ],
+     "terms": [
+      "Volume",
+      "Relative volume",
+      "Liquidity"
+     ],
+     "quiz": [
+      {
+       "question": "A breakout on 3× normal volume compared with one on half-normal volume is…",
+       "options": [
+        "Less meaningful",
+        "More meaningful",
+        "The same"
+       ],
+       "correct": 1,
+       "explanation": "More participation = more conviction behind the move."
+      }
+     ],
+     "graphic": "volume"
+    },
+    {
+     "id": "u3-moving-averages",
+     "title": "Moving averages",
+     "minutes": 4,
+     "pages": [
+      "A moving average is the average price over the last several bars, drawn as a smooth line. It filters out noise so you can see the trend.",
+      "When the price is above a rising moving average, the trend is up. Short averages (9 or 20 bars) react fast; long ones (50 or 200) show the bigger picture.",
+      "Moving averages describe what already happened. They don't predict. Add one to your chart from the indicator button (ƒ)."
+     ],
+     "terms": [
+      "Moving average",
+      "Indicator"
+     ],
+     "quiz": [
+      {
+       "question": "Price is above a rising 20-bar moving average. This suggests…",
+       "options": [
+        "A downtrend",
+        "An uptrend",
+        "Nothing"
+       ],
+       "correct": 1,
+       "explanation": "Rising average + price above it = upward trend."
+      }
+     ],
+     "task": {
+      "kind": "indicator",
+      "instruction": "Add an indicator to your chart."
+     },
+     "graphic": "movingAverage"
+    },
+    {
+     "id": "u3-vwap-rsi",
+     "title": "VWAP and RSI in plain words",
+     "minutes": 5,
+     "pages": [
+      "VWAP is today's average price, weighted by how many shares traded at each price. Day traders use it as a 'fair price' line: above VWAP, buyers are in control today; below, sellers are.",
+      "RSI is a 0–100 gauge of how strong recent moves up have been compared with moves down. Above 70 means strong buying lately; below 30 means strong selling.",
+      "Careful: 'RSI above 70' doesn't mean 'about to drop'. Strong stocks can stay above 70 for a long time. Use indicators as context, never as automatic buy or sell signals."
+     ],
+     "terms": [
+      "VWAP",
+      "RSI"
+     ],
+     "quiz": [
+      {
+       "question": "A stock has been below VWAP all day. This suggests…",
+       "options": [
+        "Buyers are in control today",
+        "Sellers have had the upper hand today",
+        "It will go up next"
+       ],
+       "correct": 1,
+       "explanation": "Most of today's trading happened at higher prices."
+      },
+      {
+       "question": "RSI is 85. What does that tell you for sure?",
+       "options": [
+        "The stock will fall",
+        "Recent buying has been very strong",
+        "Sell now"
+       ],
+       "correct": 1,
+       "explanation": "It describes the past few bars. It's not a prediction."
+      }
+     ],
+     "graphic": "vwap"
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": "Day trading, realistically",
+   "summary": "What it really takes, how to find stocks that move, and the advanced tools.",
+   "lessons": [
+    {
+     "id": "u4-day-trading-reality",
+     "title": "What day trading really is",
+     "minutes": 5,
+     "pages": [
+      "Day trading means opening and closing trades on the same day. It looks exciting online, but the research is sobering: a study of Brazilian day traders found that 97% of people who kept at it for more than 300 days lost money.",
+      "Costs add up fast. Every quick trade pays the spread and some slippage. Small costs on many trades can wipe out a small edge.",
+      "That doesn't mean you can't learn it. It means you should practice for months with pretend money, track your results honestly, and only consider real money if your numbers prove you have an edge."
+     ],
+     "terms": [
+      "Day trade",
+      "Spread",
+      "Slippage",
+      "Expectancy"
+     ],
+     "quiz": [
+      {
+       "question": "What does the evidence say about most day traders?",
+       "options": [
+        "Most make a living",
+        "Most lose money over time",
+        "About half win"
+       ],
+       "correct": 1,
+       "explanation": "Studies across countries find the large majority lose money."
+      },
+      {
+       "question": "Why do trading costs matter more for day traders?",
+       "options": [
+        "They pay higher taxes",
+        "They pay the spread and slippage on many more trades",
+        "Brokers charge them double"
+       ],
+       "correct": 1,
+       "explanation": "Many small costs on many trades add up."
+      }
+     ]
+    },
+    {
+     "id": "u4-market-hours",
+     "title": "Market hours and the open",
+     "minutes": 4,
+     "pages": [
+      "The regular session runs 9:30 AM to 4:00 PM Eastern. The first 30 minutes are usually the wildest: lots of orders, big moves, and wide spreads.",
+      "Before 9:30 (pre-market) and after 4:00 (after hours), fewer people trade. Prices can jump, spreads are wider, and most brokers only allow limit orders.",
+      "Many beginners do better skipping the first 15–30 minutes and letting the dust settle."
+     ],
+     "terms": [
+      "Market hours",
+      "Pre-market",
+      "After hours"
+     ],
+     "quiz": [
+      {
+       "question": "Which order type is usually required before 9:30 AM?",
+       "options": [
+        "Market",
+        "Limit",
+        "Trailing stop"
+       ],
+       "correct": 1,
+       "explanation": "Brokers require limits in extended hours to protect you from wild prices."
+      }
+     ],
+     "unlocks": [
+      "extendedHours"
+     ]
+    },
+    {
+     "id": "u4-scanner",
+     "title": "Finding stocks that move",
+     "minutes": 4,
+     "pages": [
+      "Day traders look for stocks that are moving today and have lots of volume, so they can get in and out easily.",
+      "A scanner searches the market for you: biggest gainers, unusual volume, stocks that opened far from yesterday's close (gaps).",
+      "Big movers are often moving because of news. Check why before trading, and stay away from very cheap, thinly traded stocks. Try the Scan tab."
+     ],
+     "terms": [
+      "Scanner",
+      "Gap",
+      "Relative volume"
+     ],
+     "quiz": [
+      {
+       "question": "Why prefer stocks with high volume for day trading?",
+       "options": [
+        "They always go up",
+        "You can get in and out easily with small spreads",
+        "They're cheaper"
+       ],
+       "correct": 1,
+       "explanation": "Liquidity keeps costs low and exits possible."
+      }
+     ],
+     "task": {
+      "kind": "scanner",
+      "instruction": "Run a scan in the Scan tab."
+     }
+    },
+    {
+     "id": "u4-setups",
+     "title": "Common setups: breakouts and pullbacks",
+     "minutes": 5,
+     "pages": [
+      "A breakout trade buys when the price pushes through resistance with strong volume, with a stop just below the old resistance.",
+      "A pullback trade waits for a stock in an uptrend to dip toward support (or a moving average or VWAP), then buys when it starts rising again, with a stop below the dip.",
+      "No setup works every time. What makes it a setup is that you know in advance where you get in, where you get out if wrong, and where you take profit."
+     ],
+     "terms": [
+      "Breakout",
+      "Pullback",
+      "Support",
+      "Resistance"
+     ],
+     "quiz": [
+      {
+       "question": "What turns an idea into a setup?",
+       "options": [
+        "A tip from a friend",
+        "Knowing entry, stop and target in advance",
+        "A green candle"
+       ],
+       "correct": 1,
+       "explanation": "A setup is a repeatable plan, not a hunch."
+      }
+     ]
+    },
+    {
+     "id": "u4-replay",
+     "title": "Practice a whole day: bar replay",
+     "minutes": 3,
+     "pages": [
+      "Bar replay loads a real past trading day and reveals it one bar at a time. You trade it like it's live, without knowing what comes next.",
+      "It lets you practice a full day in ten minutes, any time, even on weekends.",
+      "Start a replay from Home → Replay and finish it to see your result."
+     ],
+     "terms": [
+      "Paper trading"
+     ],
+     "quiz": [
+      {
+       "question": "What's the point of bar replay?",
+       "options": [
+        "To see the future",
+        "To practice decisions on real past days without knowing the outcome",
+        "To copy other traders"
+       ],
+       "correct": 1,
+       "explanation": "It speeds up practice with real price action."
+      }
+     ],
+     "task": {
+      "kind": "replay",
+      "instruction": "Finish one bar replay."
+     }
+    },
+    {
+     "id": "u4-short-selling",
+     "title": "Short selling: betting on a drop",
+     "minutes": 5,
+     "pages": [
+      "Short selling means borrowing shares, selling them now, and buying them back later. If the price falls, you buy back cheaper and keep the difference.",
+      "The danger: a stock can only fall to $0, but it can rise without limit. A short can lose far more than you put in. Sudden jumps (like short squeezes) can be brutal.",
+      "Shorting needs a margin account, and brokers may charge a fee to borrow shares. Finishing this lesson unlocks short selling in your practice account."
+     ],
+     "terms": [
+      "Short selling",
+      "Short squeeze",
+      "Cover"
+     ],
+     "quiz": [
+      {
+       "question": "You short at $50. What's the most you can lose?",
+       "options": [
+        "$50 a share",
+        "There's no limit",
+        "Nothing"
+       ],
+       "correct": 1,
+       "explanation": "The price can keep rising, so losses on a short are unlimited."
+      },
+      {
+       "question": "To close a short, you…",
+       "options": [
+        "Sell more",
+        "Buy the shares back (cover)",
+        "Wait for it to expire"
+       ],
+       "correct": 1,
+       "explanation": "Buying back returns the borrowed shares."
+      }
+     ],
+     "unlocks": [
+      "shorting"
+     ],
+     "graphic": "short"
+    },
+    {
+     "id": "u4-margin",
+     "title": "Margin: trading with borrowed money",
+     "minutes": 5,
+     "pages": [
+      "Margin is a loan from your broker. With margin, $10,000 can control about $20,000 of stock. That doubles your gains, and doubles your losses.",
+      "If your account falls too far, the broker issues a margin call: add money or sell. If you don't, they can sell your positions for you, often at the worst time.",
+      "In June 2026 a new rule replaced the old 'pattern day trader' $25,000 minimum with checks on your margin during the day. Some brokers may keep the old limit until October 2027. Finishing this lesson unlocks margin in your practice account."
+     ],
+     "terms": [
+      "Margin",
+      "Margin call",
+      "Maintenance margin",
+      "Buying power",
+      "Pattern day trader rule"
+     ],
+     "quiz": [
+      {
+       "question": "With 2× margin, a 10% drop in your stocks costs you about…",
+       "options": [
+        "5% of your money",
+        "10% of your money",
+        "20% of your money"
+       ],
+       "correct": 2,
+       "explanation": "Borrowed money magnifies the move."
+      },
+      {
+       "question": "What can happen if you ignore a margin call?",
+       "options": [
+        "Nothing",
+        "The broker can sell your positions",
+        "Your loan is forgiven"
+       ],
+       "correct": 1,
+       "explanation": "The broker protects its loan by selling."
+      }
+     ],
+     "unlocks": [
+      "margin"
+     ],
+     "graphic": "margin"
+    },
+    {
+     "id": "u4-advanced-orders",
+     "title": "Stop-limit and trailing stops",
+     "minutes": 4,
+     "pages": [
+      "A stop-limit order becomes a limit order when the stop price trades. You control the price, but in a fast drop it may not fill at all.",
+      "A trailing stop follows the price up by a set amount or percent and never moves down. It locks in profit as a trade works.",
+      "These tools are useful once basic stops feel natural. Finishing this lesson unlocks them in the order ticket."
+     ],
+     "terms": [
+      "Stop-limit order",
+      "Trailing stop"
+     ],
+     "quiz": [
+      {
+       "question": "A 10% trailing stop on a stock that rose from $100 to $150 sits at…",
+       "options": [
+        "$90",
+        "$135",
+        "$150"
+       ],
+       "correct": 1,
+       "explanation": "10% below the highest price reached: $150 × 0.9 = $135."
+      }
+     ],
+     "unlocks": [
+      "advancedOrders"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": "Staying safe and investing",
+   "summary": "Scams, hype, leverage blowups, and why long-term investing works for most people.",
+   "lessons": [
+    {
+     "id": "u5-pump-and-dump",
+     "title": "Scams: pump and dump",
+     "minutes": 4,
+     "pages": [
+      "In a pump and dump, scammers buy a cheap, thinly traded stock, then hype it in chats, social media or text messages so others pile in. When the price jumps, they sell to the new buyers, and the price collapses.",
+      "Warning signs: a stranger messaging you with a 'hot tip', promises like '10× by Friday', pressure to buy right now, and tiny companies you've never heard of.",
+      "If someone you don't know is excited for you to buy something, ask what they get out of it."
+     ],
+     "terms": [
+      "Pump and dump",
+      "Penny stock",
+      "Liquidity"
+     ],
+     "quiz": [
+      {
+       "question": "A group chat says a $0.40 stock 'will 10× this week, buy before it's too late'. This is most likely…",
+       "options": [
+        "A great opportunity",
+        "A pump and dump",
+        "An index fund"
+       ],
+       "correct": 1,
+       "explanation": "Urgency + huge promises + tiny stock = classic pump and dump."
+      }
+     ],
+     "graphic": "pumpDump"
+    },
+    {
+     "id": "u5-finfluencers",
+     "title": "Influencers and 'guaranteed' returns",
+     "minutes": 4,
+     "pages": [
+      "Nobody can guarantee stock returns. Anyone who does is either wrong or lying, and promising guaranteed returns is a common sign of fraud.",
+      "Many online traders show their wins and hide their losses. Some are paid to promote stocks or courses. Screenshots of profits prove nothing.",
+      "Better questions: How do they make money? Do they show every trade, including losses, over a long time? What happens to them if you lose?"
+     ],
+     "terms": [],
+     "quiz": [
+      {
+       "question": "Someone online shows a $50,000 winning trade. What does that prove?",
+       "options": [
+        "They're a great trader",
+        "Very little; you don't see their losses",
+        "You should copy them"
+       ],
+       "correct": 1,
+       "explanation": "One screenshot hides everything else."
+      },
+      {
+       "question": "'Guaranteed 5% a week' is…",
+       "options": [
+        "Realistic for experts",
+        "A major red flag",
+        "Normal for index funds"
+       ],
+       "correct": 1,
+       "explanation": "No legitimate investment can promise that."
+      }
+     ]
+    },
+    {
+     "id": "u5-leverage",
+     "title": "How leverage wipes accounts out",
+     "minutes": 4,
+     "pages": [
+      "Leverage (margin, options, leveraged funds) makes small price moves into big gains or losses.",
+      "Options can lose 100% of what you paid in days. Margin can lose more than you put in. These tools are easy to start and hard to survive.",
+      "Most stories of people losing everything involve leverage. Learn the basics thoroughly before touching any of it with real money."
+     ],
+     "terms": [
+      "Leverage",
+      "Options",
+      "Margin",
+      "Margin call"
+     ],
+     "quiz": [
+      {
+       "question": "Why do most 'lost everything' stories involve leverage?",
+       "options": [
+        "Leverage is illegal",
+        "It turns normal price moves into account-ending losses",
+        "It has high fees"
+       ],
+       "correct": 1,
+       "explanation": "A 10% move can become a 50% or 100% loss."
+      }
+     ]
+    },
+    {
+     "id": "u5-investing",
+     "title": "Investing vs trading",
+     "minutes": 5,
+     "pages": [
+      "Investing means buying a diversified fund, like an S&P 500 index fund, and holding it for years. Over the last century the S&P 500 has returned about 10% a year on average, with some years falling more than 30%.",
+      "Compounding does the heavy lifting: gains earn their own gains. $200 a month for 30 years at 8% a year grows to roughly $300,000, from $72,000 put in.",
+      "For most people, steady investing beats active trading. Day trading can be a skill worth learning, but it shouldn't replace your long-term savings. Try the investing calculator to see it with real past prices."
+     ],
+     "terms": [
+      "Investing",
+      "Index fund",
+      "Compounding",
+      "Dollar-cost averaging",
+      "Diversification"
+     ],
+     "quiz": [
+      {
+       "question": "What does most of the growth in long-term investing come from?",
+       "options": [
+        "Picking the best day",
+        "Compounding over many years",
+        "Trading often"
+       ],
+       "correct": 1,
+       "explanation": "Time lets gains build on gains."
+      },
+      {
+       "question": "Which is generally better for long-term savings?",
+       "options": [
+        "Day trading",
+        "A diversified, low-cost index fund",
+        "Penny stocks"
+       ],
+       "correct": 1,
+       "explanation": "Diversified, low-cost funds are the usual default for long-term savings."
+      }
+     ],
+     "task": {
+      "kind": "investingCalc",
+      "instruction": "Open the investing calculator and run a scenario."
+     },
+     "graphic": "compound"
+    },
+    {
+     "id": "u5-before-real-money",
+     "title": "Before you use real money",
+     "minutes": 4,
+     "pages": [
+      "Practice results only mean something after many trades. A good week can be luck; a good three months with a written plan is evidence.",
+      "Before using real money, this app checks: 50 practice trades, 8 weeks of practice, profitable results recently, stop losses on 90% of trades, and these safety lessons done. You also need to be 18 to open a brokerage account.",
+      "If you do start with real money, start small: an amount you could lose completely without it affecting your life."
+     ],
+     "terms": [
+      "Paper trading",
+      "Brokerage",
+      "Custodial account"
+     ],
+     "quiz": [
+      {
+       "question": "You made money 3 days in a row in practice. Are you ready for real money?",
+       "options": [
+        "Yes",
+        "Not yet; that's too few trades to tell skill from luck",
+        "Only if you use margin"
+       ],
+       "correct": 1,
+       "explanation": "You need many trades over different kinds of markets."
+      }
+     ],
+     "task": {
+      "kind": "sizingLab",
+      "instruction": "Run the position-size lab once to see how risk per trade affects a losing streak."
+     }
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "covid-2020",
+   "title": "The COVID crash",
+   "symbol": "SPY",
+   "subtitle": "February–April 2020",
+   "start": "2020-02-03",
+   "end": "2020-04-30",
+   "intro": "You hold an S&P 500 fund worth $1,000. A new virus is spreading overseas, but US stocks are at record highs. Watch what happens one day at a time, and decide what you'd do at each turning point.",
+   "beats": [
+    {
+     "date": "2020-02-19",
+     "text": "The S&P 500 closes at a record high. Very few investors are worried yet."
+    },
+    {
+     "date": "2020-02-24",
+     "text": "Cases jump in Italy and South Korea. US stocks have their worst day in two years.",
+     "decision": "The market just dropped sharply. What do you do?"
+    },
+    {
+     "date": "2020-02-27",
+     "text": "Just six trading days after the record, the S&P 500 is down more than 10%: the fastest drop like that ever recorded."
+    },
+    {
+     "date": "2020-03-09",
+     "text": "Prices fall so fast right after the open that trading is paused for 15 minutes. This 'circuit breaker' kicks in when the S&P 500 drops 7% in a day.",
+     "decision": "Trading was just halted. Hold, sell, or buy more?"
+    },
+    {
+     "date": "2020-03-12",
+     "text": "Another circuit breaker. The S&P 500 falls about 9.5%, its worst day since 1987."
+    },
+    {
+     "date": "2020-03-16",
+     "text": "The Federal Reserve cut interest rates to near zero the night before. The market falls about 12% anyway.",
+     "decision": "Everyone is scared. What do you do now?"
+    },
+    {
+     "date": "2020-03-23",
+     "text": "The Fed promises to buy bonds without limit. This turned out to be the bottom, but nobody knew that on the day."
+    },
+    {
+     "date": "2020-03-27",
+     "text": "Congress passes a $2 trillion relief package (the CARES Act)."
+    },
+    {
+     "date": "2020-04-29",
+     "text": "Stocks have won back a big part of the drop, even though the economy is still in bad shape. Markets look ahead, not at today's news."
+    }
+   ],
+   "lesson": "Selling in a panic near the bottom locks in losses, and prices recovered long before the news got better. But nobody could see the bottom in real time. That's why position size and a plan made in calm times matter more than predictions."
+  },
+  {
+   "id": "gamestop-2021",
+   "title": "The GameStop squeeze",
+   "symbol": "GME",
+   "subtitle": "January–February 2021",
+   "start": "2021-01-04",
+   "end": "2021-02-26",
+   "intro": "You own $1,000 of GameStop, a video-game store that many professional investors are betting against (short selling). Online forums are getting excited. Prices on this chart are adjusted for a later stock split, so focus on the shape, not the dollar amounts.",
+   "beats": [
+    {
+     "date": "2021-01-13",
+     "text": "The stock jumps more than 50% in one day after news about new board members. Online forums light up."
+    },
+    {
+     "date": "2021-01-22",
+     "text": "Short sellers rush to buy shares back to limit their losses, which pushes the price even higher. This is a short squeeze.",
+     "decision": "The stock has more than doubled this month. What do you do?"
+    },
+    {
+     "date": "2021-01-27",
+     "text": "The price has multiplied many times in two weeks. It's on the news everywhere.",
+     "decision": "Everyone is talking about it. Hold, sell, or buy more?"
+    },
+    {
+     "date": "2021-01-28",
+     "text": "Several brokerage apps, including Robinhood, stop letting customers buy the stock. The price swings wildly all day."
+    },
+    {
+     "date": "2021-02-02",
+     "text": "The squeeze ends. The price collapses over a few days."
+    },
+    {
+     "date": "2021-02-19",
+     "text": "The stock is down nearly 90% from its late-January close. Many people who bought near the top lost most of their money."
+    }
+   ],
+   "lesson": "Hype can push a price far away from what a business is worth, and buying after everyone is talking about it often means buying late. Short squeezes are also why short selling is so dangerous: losses can grow without limit."
+  },
+  {
+   "id": "banks-2023",
+   "title": "The 2023 bank scare",
+   "symbol": "KRE",
+   "subtitle": "March–May 2023",
+   "start": "2023-02-27",
+   "end": "2023-05-12",
+   "intro": "You own $1,000 of a fund that holds many regional US banks. Interest rates have risen quickly over the past year, and some banks are sitting on losses from bonds they bought when rates were low.",
+   "beats": [
+    {
+     "date": "2023-03-09",
+     "text": "Silicon Valley Bank says it lost $1.8 billion selling bonds and needs to raise money. Its stock falls about 60% and customers rush to pull out deposits.",
+     "decision": "Bank stocks are dropping fast. What do you do?"
+    },
+    {
+     "date": "2023-03-10",
+     "text": "Regulators shut down Silicon Valley Bank, the biggest US bank failure since 2008."
+    },
+    {
+     "date": "2023-03-13",
+     "text": "Over the weekend Signature Bank was also closed, and the government promised that all deposits at both banks are safe. Regional bank stocks drop hard anyway.",
+     "decision": "Your fund just had a terrible day. Hold, sell, or buy more?"
+    },
+    {
+     "date": "2023-03-20",
+     "text": "Over the weekend, the Swiss bank UBS agreed to buy its struggling rival Credit Suisse."
+    },
+    {
+     "date": "2023-05-01",
+     "text": "First Republic Bank is taken over by regulators and sold to JPMorgan."
+    },
+    {
+     "date": "2023-05-12",
+     "text": "Regional bank stocks are still well below where they started. Some fears fade slowly."
+    }
+   ],
+   "lesson": "Fear spreads between similar companies: one bank's problem hit the whole group, even healthy banks. Spreading your money across different industries limits how much one bad corner of the market can hurt you."
+  }
+ ],
+ "calendar": [
+  {
+   "date": "2026-01-28",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-03-18",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-04-29",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-06-17",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-07-29",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2026-11-10",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2026-12-09",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision"
+  },
+  {
+   "date": "2026-12-10",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-01-08",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-01-13",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-01-27",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-02-05",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-02-11",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-03-05",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-03-10",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-03-17",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-04-02",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-04-13",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-04-28",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-05-07",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-05-12",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-06-04",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-06-09",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-06-10",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-07-02",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-07-14",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-07-28",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-08-06",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-08-11",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-09-03",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-09-14",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-09-15",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-10-08",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-10-14",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-10-27",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-11-05",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-11-10",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  },
+  {
+   "date": "2027-12-03",
+   "kind": "jobs",
+   "title": "Jobs report"
+  },
+  {
+   "date": "2027-12-08",
+   "kind": "fomc",
+   "title": "Fed interest-rate decision (tentative)"
+  },
+  {
+   "date": "2027-12-10",
+   "kind": "cpi",
+   "title": "Inflation report (CPI)"
+  }
+ ]
+}
