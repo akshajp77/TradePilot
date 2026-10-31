@@ -1,5 +1,6 @@
 import Foundation
 import os
+import Combine
 
 /// Gemini article explanations. Instructions travel in `systemInstruction`; the article travels as
 /// a JSON data blob in the user turn; the reply is constrained by a response schema and then

@@ -11,8 +11,21 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "TradePilot", "target-membership": [ "TradePilot" ] },
     {
+      "kind": "folder",
+      "path": "TradePilot",
+      "target-membership": [
+        "TradePilot",
+      ],
+      "membership-exceptions": [
+        {
+          "target": "TradePilot",
+          "exclusions": [
+            "TradingLab/Tests/TradingLabCoreTests.swift",
+          ],
+        },
+      ],
+    }, {
       "kind": "group",
       "name": "Products",
       "children": [

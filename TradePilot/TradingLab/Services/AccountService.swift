@@ -6,6 +6,7 @@ import Security
 #if canImport(UIKit)
 import UIKit
 #endif
+import Combine
 
 nonisolated enum AccountError: Error, Equatable {
     case signedOut

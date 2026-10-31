@@ -1,6 +1,7 @@
 import SwiftUI
 import Charts
 import AVFoundation
+import Combine
 
 enum LessonScene {
     static func phase(_ elapsed: Double) -> Int { min(3, max(0, Int(elapsed / BiteLesson.sceneLength))) }

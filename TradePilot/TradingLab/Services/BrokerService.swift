@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 /// A real Alpaca account (paper or live), connected with the user's own API keys or with OAuth.
 /// Credentials live in the Keychain on this device only and never sync.
